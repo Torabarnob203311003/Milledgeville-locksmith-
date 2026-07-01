@@ -226,6 +226,29 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   position: relative;
   overflow: hidden;
 }
+.floating-call-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--gold);
+  color: var(--white);
+  padding: 13px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.26);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.floating-call-btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+}
 .hero::before {
   content: '';
   position: absolute;
@@ -1103,11 +1126,26 @@ footer {
   .card-grid { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: 20px; }
   .page-header { padding: 48px 18px 40px; }
+  .floating-call-btn {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+    font-size: 0.84rem;
+    border-radius: 999px;
+  }
 }
 @media (max-width: 480px) {
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .about-visual .about-stats { grid-template-columns: 1fr 1fr; }
+  .floating-call-btn {
+    right: 10px;
+    bottom: 10px;
+    left: auto;
+    width: auto;
+    padding: 9px 12px;
+    font-size: 0.8rem;
+  }
 }
 
 /* ===== UTILITY ===== */

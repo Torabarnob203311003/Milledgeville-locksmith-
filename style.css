@@ -650,26 +650,12 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   transition: background var(--transition);
 }
 .faq-q:hover { background: var(--gold-pale); }
-.faq-q.open { background: var(--gold-pale); color: var(--gold); }
+.faq-q.open { background: transparent; color: var(--navy); }
 .faq-q .faq-icon {
-  width: 24px;
-  height: 24px;
-  background: var(--navy);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 0.75rem;
-  flex-shrink: 0;
-  transition: transform var(--transition), background var(--transition);
-}
-.faq-q.open .faq-icon {
-  transform: rotate(45deg);
-  background: var(--gold);
+  display: none;
 }
 .faq-a {
-  display: none;
+  display: block;
   padding: 0 24px 20px;
   font-size: 0.9rem;
   color: var(--text-mid);

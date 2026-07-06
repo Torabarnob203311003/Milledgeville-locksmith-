@@ -1108,6 +1108,7 @@ footer {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .form-row { grid-template-columns: 1fr; }
   .hero { padding: 60px 18px 72px; }
+  .hero h2 { line-height: 1.15; }
   .hero-meta { gap: 20px; }
   .card-grid { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: 20px; }
